@@ -1,0 +1,66 @@
+/* Card Styling */
+.syllabus-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .syllabus-card .card-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+  }
+  
+  .syllabus-card .card-title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .syllabus-card .card-body {
+    padding: 1.25rem;
+  }
+  
+  .syllabus-card .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .syllabus-card .card-text strong {
+    font-weight: bold;
+  }
+  
+  .syllabus-card .card-footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .syllabus-card {
+      margin: 0 15px;
+    }
+  
+    .syllabus-card .card-title {
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* Animation */
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

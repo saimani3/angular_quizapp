@@ -1,0 +1,12 @@
+/* home.component.css */
+
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    transform: translateY(-5px);
+  }
+  

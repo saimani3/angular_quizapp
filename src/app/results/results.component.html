@@ -1,0 +1,19 @@
+<div class="results-container container my-5">
+    <h1 class="text-center mb-4 animate__animated animate__fadeIn">Your Results</h1>
+    
+    <div class="result-summary animate__animated animate__fadeIn">
+      <p class="lead">You scored <strong>{{ score }}</strong> out of <strong>{{ totalQuestions }}</strong>.</p>
+    </div>
+  
+    <h2 class="mt-4">Incorrect Answers:</h2>
+    <ul class="list-group mb-4">
+      <li *ngFor="let answer of incorrectAnswers" class="list-group-item animate__animated animate__fadeIn">
+        <strong>Question:</strong> {{ answer.question }} <br />
+        <strong>Correct Answer:</strong> {{ answer.correctAnswer }}
+      </li>
+    </ul>
+  
+    <div class="text-center">
+      <button class="btn btn-primary" (click)="goBack()">Go Back to Quiz</button>
+    </div>
+  </div>
